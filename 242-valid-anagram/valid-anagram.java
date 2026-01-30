@@ -8,13 +8,12 @@ class Solution {
          for(int i=0;i<s.length();i++)
          {
             freq[s.charAt(i)-'a']++;
+            freq[t.charAt(i)-'a']--;
+
          } 
 
           // count freq of each char at t
-         for(int i=0;i<t.length();i++)
-         {
-            freq[t.charAt(i)-'a']--;
-         }
+        
          for(int count=0;count<freq.length;count++)
          {
             if(freq[count]!=0)
